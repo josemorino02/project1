@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PT. ANUGRAH MENTARI PERKASA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Font Awesome (ikon terbaru YouTube, Instagram, Facebook) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+      <style>
+
+.align-equal {
+  display: flex;
+}
+
+
+.align-equal > [class*='col-'] {
+  display: flex;
+}
+
+.contact-form-box,
+.contact-info-box {
+  width: 100%;
+}
+
+.contact-form-box,
+.contact-info-box {
+  height: 100%;
+}
+
+.contact-title-small {
+  font-size: 10px;       /* lebih kecil */
+  font-weight: 700;
+  color: #2d3e8b;
+  margin-bottom: 2px;    /* lebih rapat */
+}
+
+.contact-subtitle {
+  font-size: 18px;       /* lebih kecil dari title */
+  font-weight: 800;
+  color: #444;
+  margin-top: -15px;       /* hilangkan jarak aneh */
+}
+.custom-contact-section {
+  padding: 90px 0;
+  background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), 
+              url('images/f2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== Title ===== */
+.contact-title-small {
+  font-size: 32px;
+  font-weight: 800;
+  color: #2d3e8b;
+  margin-bottom: 35px;
+}
+
+/* ===== Form Box ===== */
+.contact-form-box {
+  background: #f4f4f4;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.contact-form-box .form-control {
+  height: 55px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.contact-form-box textarea {
+  height: 140px;
+  resize: none;
+}
+
+/* ===== Button ===== */
+.contact-btn {
+  background: #28a745;   /* hijau */
+  border: none;
+  padding: 14px 35px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #1e7e34;   /* hijau lebih gelap saat hover */
+}
+/* ===== Info Box ===== */
+.contact-info-box {
+  background: #2d3e8b;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.contact-info-box h4 {
+  font-size: 20px;     /* lebih besar */
+  font-weight: 700;
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.contact-info-box p {
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+    .navbar-custom {
+      background-color: #001f3f;
+    }
+    .navbar-brand span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+    }
+    .social-icons a {
+      color: #fff;
+      font-size: 28px; /* ukuran ikon besar */
+      margin-right: 20px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #0074D9;
+    }
+    /* Sidebar styling */
+    #sidebarMenu {
+      position: fixed;
+      top: 0;
+      right: -260px;
+      width: 260px;
+      height: 100vh;
+      background-color: #001f3f;
+      color: #fff;
+      padding: 20px;
+      transition: right 0.3s ease;
+      z-index: 9999;
+    }
+    #sidebarMenu.active {
+      right: 0;
+    }
+    #sidebarMenu h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    #sidebarMenu p {
+      margin: 10px 0;
+    }
+    .hamburger-btn {
+      border: none;
+      background: none;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .ftco-footer-social a {
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.ftco-footer-social a:hover {
+  background: #1e7e34;
+  transform: translateY(-3px);
+}
+
+.btn-success {
+  background: #28a745;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.video-box iframe {
+  border-radius: 12px;
+}
+.wa-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  background: #25D366;
+  padding: 14px 18px;          /* lebih besar */
+  border-radius: 60px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.wa-float img {
+  width: 34px;   /* ikon lebih besar */
+  height: 34px;
+}
+
+.wa-text {
+  color: white;
+  font-weight: 700;
+  margin-right: 10px;
+  font-size: 16px;  /* teks lebih besar */
+  white-space: nowrap;
+}
+
+.wa-float:hover {
+  transform: scale(1.08);
+  background: #1ebe5d;
+}
+
+.navbar-trim {
+  position: sticky;
+  top: 0;              /* langsung nempel atas */
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+.ftco-footer-widget ul li a, .ftco-footer-widget ul li { color: #fff; /* ubah jadi putih */ } .ftco-footer-widget ul li a:hover { color: #28a745; /* opsional: warna hijau saat hover */ }
+.submenu {
+  display: none;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.submenu li {
+  font-size: 14px;
+  color: #ccc;
+  padding: 3px 0;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+}
+
+.has-submenu.active > .submenu {
+  display: block;
+}
+.topbar-custom {
+  background: #001f3f; /* hitam elegan */
+  color: #fff;
+  font-size: 13px;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+}
+
+.topbar-left {
+  margin-left: 30px; /* atur jarak dari sisi kiri */
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.topbar-right span {
+  white-space: nowrap;
+}
+
+.topbar-right i {
+  margin-right: 6px;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+/* Garis layout utama kiri-kanan */
+.topbar-inner,
+.nav-inner {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* Biar navbar isi sejajar */
+.nav-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Supaya menu kanan tetap nempel kanan */
+.navbar-nav {
+  margin-right: 10px;   /* atur jarak ke kanan */
+}
+.navbar-nav .nav-item {
+  margin: 0 18px;        /* bikin renggang & elegan */
+}
+.navbar-nav .nav-link {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* MENU DEFAULT */
+.navbar-light .navbar-nav .nav-link {
+  color: #333 !important;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #001f3f !important;
+  transform: translateY(-2px);
+}
+
+/* GARIS ANIMASI BAWAH (EFEK WEBSITE MAHAL) */
+.navbar-light .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #001f3f;
+  transition: width 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.contact-map-full {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.map-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.map-box {
+  width: 50%;
+}
+
+.map-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 420px;
+  border: 4px solid #001f3f; /* border biru elegan */
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+  </style>
+</head>
+<body>
+<a href="https://wa.me/6282362435607?text=Halo%20saya%20ingin%20bertanya%20tentang%20layanan%20anda"
+   target="_blank"
+   class="wa-float"
+   title="Chat WhatsApp Kami">
+   
+   <span class="wa-text">Tanya Layanan</span>
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+<!-- Header Atas -->
+<div class="topbar-custom">
+  <div class="topbar-inner">
+
+    <!-- KIRI: Jam Operasional -->
+    <div class="topbar-left">
+      <i class="far fa-clock"></i> Senin – Jumat 08.00 – 17.00 WIB
+    </div>
+
+    <!-- KANAN: Kontak + Sosmed -->
+    <div class="topbar-right">
+      <span><i class="fas fa-phone"></i> (061) 42078488</span>
+      <span><i class="fas fa-envelope"></i> anugrahmentari.perkasa@gmail.com</span>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Navbar Putih -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm navbar-trim">
+  <div class="nav-inner">
+
+    <!-- Logo + Nama -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration:none;">
+      <img src="images/logo.png" alt="Logo AMP" style="height:50px; margin-right:12px;">
+      <span style="font-family:'Poppins',sans-serif; font-weight:700; font-size:20px; color:#001f3f;">
+        PT. ANUGRAH MENTARI PERKASA
+      </span>
+    </a>
+
+    <!-- Toggle untuk mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu kanan -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="index.html" class="nav-link" style="margin:0 15px;">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link" style="margin:0 15px;">About</a></li>
+        <li class="nav-item"><a href="project.html" class="nav-link" style="margin:0 15px;">Project</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link" style="margin:0 15px;">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/f2.jpeg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread"><span style="color:#ffffff;">Contact Us</span></h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="custom-contact-section">
+  <div class="container">
+
+<div class="row mb-3">
+  <div class="col-md-7 pl-md-4">
+    <h2 class="contact-title-small">Contact Form</h2>
+  </div>
+
+  <div class="col-md-5 pl-md-4">
+    <h2 class="contact-title-small">
+      Informasi PT. Anugrah Mentari Perkasa
+    </h2>
+    <div class="contact-subtitle">
+      Hubungi Kami Disini:
+    </div>
+  </div>
+</div>
+
+<div class="row align-equal">
+      
+      <div class="col-md-7">
+        <div class="contact-form-box">
+          <form action="sendmail.php" method="POST">
+            <input type="text" name="name" class="form-control" placeholder="Name" required>
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <input type="text" name="phone" class="form-control" placeholder="Phone">
+            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+            <button type="submit" class="contact-btn mt-3">Submit Now</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="contact-info-box">
+          <h4>No Telepon</h4>
+          <p>(061) 42078488</p>
+
+          <h4>Whatsapp</h4>
+          <p>082211889100</p>
+
+          <h4>Email address</h4>
+          <p>anugrahmentari.perkasa@gmail.com</p>
+
+          <h4>Address info</h4>
+          <p> Jln. Karya Wisata Komplek Johor City Blok D No. 10, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara</p>
+          <h4>Opening Hours</h4>
+          <p>
+            Mon–Fri: 08:00 – 16:30<br>
+            Saturday: 08:00 – 12:00<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-map-full">
+
+  <div class="map-wrapper">
+
+    <!-- MAP KANTOR -->
+    <div class="map-box">
+      <h3>Kantor</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0396125463044!2d98.65870127495192!3d3.5355055506562345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303125a753ce4267%3A0xd335cd81876535a7!2sPT.%20ANUGRAH%20MENTARI%20PERKASA!5e1!3m2!1sid!2sid!4v1769670731338!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- MAP WORKSHOP -->
+    <div class="map-box">
+      <h3>Workshop</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9942230011243!2d98.82025377495202!3d3.5887994502928096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031363bd63ced53%3A0xf7a15777f9c266d2!2sJl.%20Damai%2C%20Kabupaten%20Deli%20Serdang%2C%20Sumatera%20Utara!5e1!3m2!1sid!2sid!4v1773466245491!5m2!1sid!2sid" 
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+</section>
+		
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+
+      <!-- Kolom 1 -->
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2 logo">PT. ANUGRAH MENTARI PERKASA</h2>
+          <p>Perusahaan yang bergerak di bidang maintenance, instalasi, dan layanan teknik profesional untuk kebutuhan industri Anda.</p>
+
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+            <li class="ftco-animate">
+              <a href="https://www.youtube.com/" target="_blank">
+                <span class="fab fa-youtube"></span>
+              </a>
+            </li>
+            <li class="ftco-animate">
+              <a href="https://web.facebook.com/p/PT-Anugrah-Mentari-Perkasa-100083190579380/?_rdc=1&_rdr">
+                <span class="icon-facebook"></span>
+              </a>
+            </li>
+            <li class="ftco-animate">
+              <a href="https://www.instagram.com/pt.anugrahmentariperkasa?igsh=MWt1bWVuNTU2NXFncQ%3D%3D&utm_source=qr"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+     <div class="col-md">
+  <div class="ftco-footer-widget mb-5 ml-md-4">
+    <h2 class="ftco-heading-2">Services</h2>
+   <ul class="list-unstyled service-list">
+
+  <!-- BOILER -->
+  <li class="has-submenu">
+    <a href="javascript:void(0)" class="toggle-btn">
+      <span class="ion-ios-arrow-round-forward mr-2"></span>Boiler
+    </a>
+    <ul class="submenu list-unstyled">
+      <li>General Overhaul Boiler</li>
+      <li>Re-Tubing Boiler</li>
+      <li>Mechanical Cleaning</li>
+      <li>Chemical Cleaning</li>
+      <li>Electrical & Instrument Boiler</li>
+      <li>Spare Part</li>
+    </ul>
+  </li>
+
+  <!-- TURBIN -->
+  <li class="has-submenu">
+    <a href="javascript:void(0)" class="toggle-btn">
+      <span class="ion-ios-arrow-round-forward mr-2"></span>Turbin
+    </a>
+    <ul class="submenu list-unstyled">
+      <li>General Overhaul</li>
+      <li>Semi Overhaul</li>
+      <li>Spare Part</li>
+    </ul>
+  </li>
+
+  <!-- TANPA PANAH -->
+  <li><a href="project.html">Mechanical Maintenance</a></li>
+  <li><a href="project.html">Emergency Repairs</a></li>
+  <li><a href="project.html">Scheduled Maintenance Contracts</a></li>
+  <li><a href="project.html">Equipment Installation</a></li>
+  <li><a href="project.html">Consulting Services</a></li>
+
+</ul>
+
+  </div>
+</div>
+
+
+      <!-- Kolom 3 (Contact) -->
+    <!-- Kolom 3 (Contact) -->
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2">Contact</h2>
+          <ul class="list-unstyled contact-info">
+            <li>
+              <span class="icon icon-phone mr-2"></span>
+              <a href="tel:+6281234567890">(061) 42078488 </a>
+            </li>
+            <li>
+              <span class="icon icon-envelope mr-2"></span>
+              <a href="mailto:info@anugrahmentari.com"> anugrahmentari.perkasa@gmail.com</a>
+            </li>
+            <li>
+              <span class="icon icon-map-marker mr-2"></span>
+               Jln. Karya Wisata Komplek Johor City Blok D No. 10, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 
+            </li>
+               <li>
+        <span class="icon icon-map-marker mr-2"></span>
+        <div>
+          <strong>Workshop PT Anugrah Mentari Perkasa</strong><br>
+          Jl. Damai Desa Tumpatan Nibung No. 85<br>
+          (Dalu 10 arah Kolam Renang Bintang Johor)<br>
+          Kecamatan Batang Kuis<br>
+          Kabupaten Deli Serdang
+        </div>
+      </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+<!-- jQuery + Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Toggle sidebar
+  document.getElementById('hamburgerToggle').addEventListener('click', function() {
+    document.getElementById('sidebarMenu').classList.toggle('active');
+  });
+</script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+    <script>
+  document.querySelectorAll(".toggle-btn").forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.parentElement.classList.toggle("active");
+    });
+  });
+</script>
+
+  </body>
+</html>
