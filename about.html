@@ -266,6 +266,14 @@
   padding-right: 80px;
 }
 
+@media (max-width: 768px) {
+  .topbar-inner,
+  .nav-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 /* Biar navbar isi sejajar */
 .nav-inner {
   width: 100%;
@@ -669,6 +677,90 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
+@media (max-width: 768px) {
+
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .topbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .topbar-left {
+    margin-left: 0;
+  }
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .wrap-about {
+    padding-left: 0 !important;
+    margin-top: 20px;
+  }
+
+  .wrap-about p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .video-box {
+    padding-top: 75%;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .card img {
+    height: 220px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .row-3,
+  .row-4,
+  .row-5 {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  overflow-x: hidden;
+}
+}
   </style>
 </head>
 <body>
@@ -1056,7 +1148,7 @@ mekanis.</p>
 				</div>
 			</div>
 		</section>	
-   \  <footer class="ftco-footer ftco-bg-dark ftco-section">
+     <footer class="ftco-footer ftco-bg-dark ftco-section">
   <div class="container">
     <div class="row mb-5">
 

@@ -407,6 +407,146 @@
   border-radius: 10px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
+/* ============================= */
+/* RESPONSIVE MOBILE FIX */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* ===== TOPBAR ===== */
+  .topbar-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .topbar-left {
+    margin-left: 0;
+  }
+
+  .topbar-right {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .nav-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar-brand span {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  /* ===== HERO ===== */
+  .hero-wrap {
+    height: 200px;
+  }
+
+  .hero-wrap h1 {
+    font-size: 22px;
+  }
+
+  /* ===== CONTACT SECTION ===== */
+  .custom-contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-title-small {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .align-equal {
+    flex-direction: column;
+  }
+
+  /* ===== FORM ===== */
+  .contact-form-box {
+    padding: 25px;
+  }
+
+  .contact-form-box .form-control {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  textarea.form-control {
+    height: 120px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+  /* ===== INFO BOX ===== */
+  .contact-info-box {
+    margin-top: 20px;
+    padding: 25px;
+  }
+
+  .contact-info-box h4 {
+    font-size: 16px;
+  }
+
+  .contact-info-box p {
+    font-size: 13px;
+  }
+
+  /* ===== MAP ===== */
+  .map-wrapper {
+    flex-direction: column;
+  }
+
+  .map-box {
+    width: 100%;
+  }
+
+  .map-box iframe {
+    height: 250px;
+  }
+
+  /* ===== FOOTER ===== */
+  .ftco-footer .row {
+    text-align: center;
+  }
+
+  .ftco-footer-widget {
+    margin-bottom: 25px;
+  }
+
+  /* ===== WHATSAPP BUTTON ===== */
+  .wa-float {
+    padding: 10px 12px;
+  }
+
+  .wa-text {
+    display: none; /* biar cuma icon di HP */
+  }
+
+  .wa-float img {
+    width: 28px;
+    height: 28px;
+  }
+} body {
+  overflow-x: hidden;
+}
   </style>
 </head>
 <body>
