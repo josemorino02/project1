@@ -1155,18 +1155,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
   color: #fff;
   transform: translateX(6px);
 }
-@media (max-width: 768px) {
-  .topbar-inner,
-  .nav-inner {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  @media (max-width: 768px) {
-  .project-sidebar {
-    border-right: none;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
-  }
 
   .project-section .row {
     flex-direction: column;
@@ -1177,27 +1165,18 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 100%;
   }
-}@media (max-width: 768px) {
-  .group-title {
-    font-size: 16px;
-    padding: 12px;
-  }
+
 
   .project-submenu li,
   .pt-submenu li {
     font-size: 14px;
     padding: 10px;
   }
-}.project-group img,
+.project-group img,
 .project img {
   height: auto !important;
   max-height: 220px;
-}@media (max-width: 768px) {
-  .topbar-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
+}
 
   .topbar-right {
     flex-direction: column;
@@ -1208,10 +1187,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
   .topbar-left {
     margin-left: 0;
   }
-}@media (max-width: 768px) {
-  .wa-float {
-    padding: 10px 12px;
-  }
 
   .wa-text {
     font-size: 13px;
@@ -1220,11 +1195,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
   .wa-float img {
     width: 26px;
     height: 26px;
-  }
-}@media (max-width: 768px) {
-  .popup-nav {
-    font-size: 35px;
-    padding: 10px;
   }
 
   .popup-close {
@@ -1237,18 +1207,156 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
     width: 95%;
     height: 70vh;
   }
-}@media (max-width: 768px) {
-  .navbar-nav .nav-item {
-    margin: 8px 0;
-  }
+
 
   .navbar-brand span {
     font-size: 16px;
-  } body {
-  overflow-x: hidden;
-}
-}
-}
+  } 
+/* ================= MOBILE CLEAN FIX ================= */
+
+  /* ===== GLOBAL ===== */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ===== CONTAINER ===== */
+  .container,
+  .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* ===== TOPBAR ===== */
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 15px;
+  }
+
+  .topbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .navbar-brand span {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+
+  /* ===== SIDEBAR PROJECT ===== */
+  .project-section .row {
+    flex-direction: column;
+  }
+
+  .project-sidebar {
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+  }
+
+  /* ===== GROUP TITLE ===== */
+  .group-title {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .project-submenu li,
+  .pt-submenu li {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  /* ===== PROJECT CONTENT ===== */
+  .project-group img,
+  .project img {
+    height: auto !important;
+    max-height: 180px;
+  }
+
+  .project-group h5 {
+    font-size: 16px;
+  }
+
+  .project-group .p-3 {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  /* ===== WHATSAPP FLOAT ===== */
+  .wa-float {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 10px;
+  }
+
+  .wa-text {
+    font-size: 12px;
+  }
+
+  .wa-float img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ===== POPUP ===== */
+  .popup-stage {
+    width: 95%;
+    height: 65vh;
+  }
+
+  .popup-img {
+    max-height: 65vh;
+  }
+
+  .popup-nav {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .popup-close {
+    font-size: 28px;
+    top: 10px;
+    right: 15px;
+  }
+
+  /* ===== CAROUSEL ===== */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* ===== MODAL IMAGE ===== */
+  .modal-img {
+    max-height: 70vh;
+  }
+
+  /* ===== SPACING FIX ===== */
+  .mb-5 {
+    margin-bottom: 25px !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 20px !important;
+  }
+
     </style>
   </head>
   <body>

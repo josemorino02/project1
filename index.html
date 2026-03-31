@@ -363,8 +363,10 @@
 .navbar-nav {
   margin-right: 10px;   /* atur jarak ke kanan */
 }
-.navbar-nav .nav-item {
-  margin: 0 18px;        /* bikin renggang & elegan */
+@media (min-width: 769px) {
+  .navbar-nav .nav-item {
+    margin: 0 18px;
+  }
 }
 .navbar-nav .nav-link {
   display: inline-block;
@@ -594,7 +596,114 @@
   .ftco-section {
     padding: 40px 0 !important;
   }
+/* ================= FIX MOBILE TOTAL ================= */
+@media (max-width: 768px) {
 
+  /* ===== GLOBAL ===== */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* ===== TOPBAR ===== */
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .topbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .navbar-brand span {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  /* ===== SLIDER ===== */
+  .home-slider,
+  .home-slider .slider-item {
+    height: 45vh !important;
+  }
+
+  .hero-title {
+    font-size: 26px !important;
+    line-height: 1.3;
+  }
+
+  /* ===== ABOUT (VIDEO + TEXT) ===== */
+  .video-wrapper {
+    margin-bottom: 20px;
+  }
+
+  /* ===== WHY US FIX (PALING PENTING) ===== */
+  .why-us .row {
+    flex-direction: column !important;
+  }
+
+  .why-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .why-content {
+    padding: 30px 20px !important;
+  }
+
+  .content-box {
+    padding-left: 0 !important;
+  }
+
+  .why-item {
+    flex-direction: column;
+  }
+
+  .icon-box {
+    margin-bottom: 10px;
+  }
+
+  /* ===== SERVICES ===== */
+  .services {
+    padding: 15px !important;
+  }
+
+  /* ===== FAQ ===== */
+  #faq .row {
+    flex-direction: column;
+  }
+
+  #faq img {
+    margin-bottom: 20px;
+  }
+
+  /* ===== CLIENT ===== */
+  .client-track img {
+    height: 45px;
+    margin: 0 15px;
+  }
+
+  /* ===== FOOTER ===== */
+  .ftco-footer .row > div {
+    margin-bottom: 20px;
+  }
+
+  /* ===== WHATSAPP ===== */
+  .wa-text {
+    display: none; /* biar simpel icon saja */
+  }
+
+}
 }
   </style>
 </head>

@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -691,6 +689,57 @@
     gap: 5px;
   }
 
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+  .wrap-about {
+    padding-left: 0 !important;
+    margin-top: 20px;
+  }
+
+  .wrap-about p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .video-box {
+    padding-top: 75%;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .row-3,
+  .row-4,
+  .row-5 {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+  .topbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
   .topbar-left {
     margin-left: 0;
   }
@@ -760,7 +809,156 @@ img {
 body {
   overflow-x: hidden;
 }
+/* =========================
+   MOBILE OPTIMIZATION ONLY
+   ========================= */
+@media (max-width: 768px) {
+
+  /* GLOBAL */
+  body {
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    font-size: 20px !important;
+  }
+
+  /* TOPBAR */
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .topbar-right {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .topbar-right span {
+    font-size: 12px;
+  }
+
+  /* NAVBAR */
+  .navbar-brand span {
+    font-size: 14px !important;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .navbar-nav {
+    background: #fff;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  /* HERO */
+  @media (max-width: 768px) {
+  .hero-wrap {
+    height: 200px !important;
+  }
 }
+
+  .hero-wrap h1 {
+    font-size: 22px !important;
+  }
+
+  /* COUNTER */
+  #section-counter {
+    padding: 2em 0;
+  }
+
+  .number {
+    font-size: 28px !important;
+  }
+
+  /* ABOUT */
+  .about-company-section {
+    padding: 40px 15px;
+  }
+
+  .wrap-about p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* VIDEO */
+  .video-box {
+    padding-top: 70%;
+  }
+
+  /* MANAGEMENT (CARD) */
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  /* GRID JADI 1 KOLOM */
+  .row-3,
+  .row-4,
+  .row-5 {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  /* MODAL */
+  .modal-content-modern {
+    padding: 20px;
+  }
+
+  .modal-right h2 {
+    font-size: 20px;
+  }
+
+  .modal-right p {
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  .ftco-footer-widget {
+    text-align: center;
+  }
+
+  .contact-info li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* WHATSAPP BUTTON */
+  .wa-float {
+    padding: 10px 12px;
+  }
+
+  .wa-text {
+    font-size: 13px;
+  }
+
+  .wa-float img {
+    width: 28px;
+    height: 28px;
+  }
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}
+}
+
   </style>
 </head>
 <body>
